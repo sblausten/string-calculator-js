@@ -28,4 +28,10 @@ describe('add', () => {
 
     expect(result).to.equal(3);
   });
+
+  it('should return sum of two new space separated numbers', () => {
+    const result = add('1\n1');
+
+    expect(result).to.equal(2);
+  });
 });
