@@ -1,7 +1,6 @@
 
 function add(numbersAsString) {
-  const numbersAsArray = numbersAsString.split(',');
-  return numbersAsArray
+  return numbersAsString.split(',')
     .map((numberAsString) => parseInt(numberAsString))
     .reduce((a, b) => a+b);
 }
