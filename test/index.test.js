@@ -22,4 +22,10 @@ describe('add', () => {
 
     expect(result).to.equal(4);
   });
+
+  it('should return sum of more than 2 comma separated numbers', () => {
+    const result = add('1,1,1');
+
+    expect(result).to.equal(3);
+  });
 });
